@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block title %}ساخت حساب{% endblock %} {% block
+content %}
+<form method="POST">
+  <h3 align="center">ساخت حساب</h3>
+  <div class="form-group">
+    <label for="email">آدرس ایمیل</label>
+    <input
+      type="text"
+      id="email"
+      name="email"
+      class="form-control"
+      placeholder="Enter Email"
+    />
+    <label for="username">نام کاربری</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      class="form-control"
+      placeholder="Enter Username"
+    />
+    <label for="password1">پسورد</label>
+    <input
+      type="password"
+      id="password1"
+      name="password1"
+      class="form-control"
+      placeholder="Enter Password"
+    />
+    <label for="password2">تکرار پسورد</label>
+    <input
+      type="password"
+      id="password2"
+      name="password2"
+      class="form-control"
+      placeholder="Enter Password Again"
+    />
+    <br />
+    <div align="center">
+      <button class="btn btn-primary" type="submit">ساخت حساب</button>
+    </div>
+  </div>
+</form>
+{% endblock %}
